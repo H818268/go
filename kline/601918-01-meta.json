@@ -1,0 +1,31 @@
+{
+  "code": "601918",
+  "period": 1,
+  "n_bars": 2428,
+  "n_segs": 42,
+  "cur_seg": [
+    2403,
+    2428,
+    0
+  ],
+  "cands": [
+    [
+      1955,
+      1978,
+      0
+    ],
+    [
+      2378,
+      2400,
+      0
+    ],
+    [
+      593,
+      623,
+      0
+    ]
+  ],
+  "fallback": "fit_worse_than_default",
+  "fit_score": 1.85,
+  "base_score": 1.33
+}
