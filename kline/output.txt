@@ -229,4 +229,6 @@ han@m1:/opt/quote/src$ python3 -m mod_service
 ^C
 [Service] stopping
 han@m1:/opt/quote/src$ tmux capture-pane -p -S - > /var/tmp/git/oh/kline/output.txt
+han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$ tmux capture-pane -p -S - > /var/tmp/git/oh/kline/output.txt
 
