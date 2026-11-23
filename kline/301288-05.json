@@ -90,7 +90,7 @@
   "norm_days": 10,
   "norm_min_days": 2,
   "share_open": 0.1,
-  "share_vol": 0.25,
+  "share_vol": 0.2,
   "share_trend": 0.25,
   "share_stall": 0.1,
   "share_event": 0.3,
