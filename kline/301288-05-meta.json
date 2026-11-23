@@ -2,7 +2,9 @@
   "code": "301288",
   "period": 5,
   "n_bars": 1776,
-  "segment_source": "15m_swing_wave",
+  "segment_source": "15_swing_wave",
+  "parent_period": "15",
+  "fallback_reason": null,
   "n_segs": 11,
   "cur_seg": [
     1688,
@@ -19,13 +21,30 @@
       "distance": 2.4571884217274267,
       "start": "2026-11-09 11:15:00",
       "end": "2026-11-13 10:45:00",
-      "bars_15m": 63,
+      "confirm": "2026-11-13 13:30:00",
+      "bars_parent": 63,
       "rate": 0.1899717514124295,
       "amplitude": 0.19491525423728825,
       "rel_volume": 1.6036223902240785,
       "context": 1.2471588663969198,
       "age_days": 5.979166666666667,
-      "age_penalty": 0.9714647604585878
+      "age_penalty": 0.9714647604585878,
+      "space": {
+        "confirm_time": "2026-11-13 13:30:00",
+        "entry_time": "2026-11-13 13:35:00",
+        "entry_price": 15.92,
+        "favorable_1d": 0.015075376884422065,
+        "adverse_1d": 0.021822849807445532,
+        "hit_1d": false,
+        "favorable_2d": 0.08103015075376896,
+        "adverse_2d": 0.04667981591058501,
+        "hit_2d": true,
+        "favorable_3d": 0.26507537688442206,
+        "adverse_3d": 0.04667981591058501,
+        "hit_3d": true,
+        "days_to_target": 2,
+        "observed_days": 3
+      }
     },
     {
       "seg": [
@@ -36,13 +55,30 @@
       "distance": 2.489695608232485,
       "start": "2026-11-16 09:45:00",
       "end": "2026-11-17 09:45:00",
-      "bars_15m": 17,
+      "confirm": "2026-11-17 09:45:00",
+      "bars_parent": 17,
       "rate": 0.2200128287363694,
       "amplitude": 0.28994082840236685,
       "rel_volume": 2.3988045714380326,
       "context": 1.010468304952925,
       "age_days": 2.0208333333333335,
-      "age_penalty": 0.5527663657563417
+      "age_penalty": 0.5527663657563417,
+      "space": {
+        "confirm_time": "2026-11-17 09:45:00",
+        "entry_time": "2026-11-17 09:50:00",
+        "entry_price": 19.0,
+        "favorable_1d": 0.06000000000000005,
+        "adverse_1d": 0.030927835051546504,
+        "hit_1d": true,
+        "favorable_2d": 0.27210526315789485,
+        "adverse_2d": 0.030927835051546504,
+        "hit_2d": true,
+        "favorable_3d": 0.27210526315789485,
+        "adverse_3d": 0.04052573932091996,
+        "hit_3d": true,
+        "days_to_target": 1,
+        "observed_days": 3
+      }
     },
     {
       "seg": [
@@ -53,13 +89,30 @@
       "distance": 2.697912549791465,
       "start": "2026-10-30 09:45:00",
       "end": "2026-11-05 10:30:00",
-      "bars_15m": 68,
+      "confirm": "2026-11-09 11:00:00",
+      "bars_parent": 68,
       "rate": 0.10044313146233397,
       "amplitude": 0.16705336426914155,
       "rel_volume": 1.3064247584064264,
       "context": 1.1440946034594426,
       "age_days": 13.989583333333334,
-      "age_penalty": 1.3536777577097658
+      "age_penalty": 1.3536777577097658,
+      "space": {
+        "confirm_time": "2026-11-09 11:00:00",
+        "entry_time": "2026-11-09 11:05:00",
+        "entry_price": 14.16,
+        "favorable_1d": 0.021186440677966045,
+        "adverse_1d": 0.0,
+        "hit_1d": false,
+        "favorable_2d": 0.06638418079096042,
+        "adverse_2d": 0.0,
+        "hit_2d": true,
+        "favorable_3d": 0.10028248587570632,
+        "adverse_3d": 0.0,
+        "hit_3d": true,
+        "days_to_target": 2,
+        "observed_days": 3
+      }
     },
     {
       "seg": [
@@ -70,13 +123,30 @@
       "distance": 3.0236187797648117,
       "start": "2026-10-23 11:30:00",
       "end": "2026-10-27 09:45:00",
-      "bars_15m": 26,
+      "confirm": "2026-10-27 15:00:00",
+      "bars_parent": 26,
       "rate": 0.07428571428571429,
       "amplitude": 0.11215629522431252,
       "rel_volume": 1.164594219194391,
       "context": 1.1241689551329528,
       "age_days": 23.020833333333332,
-      "age_penalty": 1.5894607546805841
+      "age_penalty": 1.5894607546805841,
+      "space": {
+        "confirm_time": "2026-10-27 15:00:00",
+        "entry_time": "2026-10-28 09:35:00",
+        "entry_price": 14.49,
+        "favorable_1d": 0.013802622498274575,
+        "adverse_1d": 0.03131672597864754,
+        "hit_1d": false,
+        "favorable_2d": 0.013802622498274575,
+        "adverse_2d": 0.04848046309696086,
+        "hit_2d": false,
+        "favorable_3d": 0.013802622498274575,
+        "adverse_3d": 0.08783783783783794,
+        "hit_3d": false,
+        "days_to_target": null,
+        "observed_days": 3
+      }
     }
   ],
   "wave_detail": {
@@ -90,6 +160,25 @@
       "rel_volume": 0.5554377846920672,
       "mean_volume": 7310.2
     },
+    "space_summary": {
+      "samples": 4,
+      "n_1d": 4,
+      "mean_favorable_1d": 0.027516110015165685,
+      "median_favorable_1d": 0.018130908781194055,
+      "mean_adverse_1d": 0.021016852709409894,
+      "hit_rate_1d": 0.25,
+      "n_2d": 4,
+      "mean_favorable_2d": 0.1083305543002247,
+      "median_favorable_2d": 0.07370716577236469,
+      "mean_adverse_2d": 0.03152202851477309,
+      "hit_rate_2d": 0.75,
+      "n_3d": 4,
+      "mean_favorable_3d": 0.16281643710407445,
+      "median_favorable_3d": 0.1826789313800642,
+      "mean_adverse_3d": 0.04376084826733573,
+      "hit_rate_3d": 0.75,
+      "mean_days_to_target": 1.6666666666666667
+    },
     "candidates": [
       {
         "seg": [
@@ -100,13 +189,30 @@
         "distance": 2.4571884217274267,
         "start": "2026-11-09 11:15:00",
         "end": "2026-11-13 10:45:00",
-        "bars_15m": 63,
+        "confirm": "2026-11-13 13:30:00",
+        "bars_parent": 63,
         "rate": 0.1899717514124295,
         "amplitude": 0.19491525423728825,
         "rel_volume": 1.6036223902240785,
         "context": 1.2471588663969198,
         "age_days": 5.979166666666667,
-        "age_penalty": 0.9714647604585878
+        "age_penalty": 0.9714647604585878,
+        "space": {
+          "confirm_time": "2026-11-13 13:30:00",
+          "entry_time": "2026-11-13 13:35:00",
+          "entry_price": 15.92,
+          "favorable_1d": 0.015075376884422065,
+          "adverse_1d": 0.021822849807445532,
+          "hit_1d": false,
+          "favorable_2d": 0.08103015075376896,
+          "adverse_2d": 0.04667981591058501,
+          "hit_2d": true,
+          "favorable_3d": 0.26507537688442206,
+          "adverse_3d": 0.04667981591058501,
+          "hit_3d": true,
+          "days_to_target": 2,
+          "observed_days": 3
+        }
       },
       {
         "seg": [
@@ -117,13 +223,30 @@
         "distance": 2.489695608232485,
         "start": "2026-11-16 09:45:00",
         "end": "2026-11-17 09:45:00",
-        "bars_15m": 17,
+        "confirm": "2026-11-17 09:45:00",
+        "bars_parent": 17,
         "rate": 0.2200128287363694,
         "amplitude": 0.28994082840236685,
         "rel_volume": 2.3988045714380326,
         "context": 1.010468304952925,
         "age_days": 2.0208333333333335,
-        "age_penalty": 0.5527663657563417
+        "age_penalty": 0.5527663657563417,
+        "space": {
+          "confirm_time": "2026-11-17 09:45:00",
+          "entry_time": "2026-11-17 09:50:00",
+          "entry_price": 19.0,
+          "favorable_1d": 0.06000000000000005,
+          "adverse_1d": 0.030927835051546504,
+          "hit_1d": true,
+          "favorable_2d": 0.27210526315789485,
+          "adverse_2d": 0.030927835051546504,
+          "hit_2d": true,
+          "favorable_3d": 0.27210526315789485,
+          "adverse_3d": 0.04052573932091996,
+          "hit_3d": true,
+          "days_to_target": 1,
+          "observed_days": 3
+        }
       },
       {
         "seg": [
@@ -134,13 +257,30 @@
         "distance": 2.697912549791465,
         "start": "2026-10-30 09:45:00",
         "end": "2026-11-05 10:30:00",
-        "bars_15m": 68,
+        "confirm": "2026-11-09 11:00:00",
+        "bars_parent": 68,
         "rate": 0.10044313146233397,
         "amplitude": 0.16705336426914155,
         "rel_volume": 1.3064247584064264,
         "context": 1.1440946034594426,
         "age_days": 13.989583333333334,
-        "age_penalty": 1.3536777577097658
+        "age_penalty": 1.3536777577097658,
+        "space": {
+          "confirm_time": "2026-11-09 11:00:00",
+          "entry_time": "2026-11-09 11:05:00",
+          "entry_price": 14.16,
+          "favorable_1d": 0.021186440677966045,
+          "adverse_1d": 0.0,
+          "hit_1d": false,
+          "favorable_2d": 0.06638418079096042,
+          "adverse_2d": 0.0,
+          "hit_2d": true,
+          "favorable_3d": 0.10028248587570632,
+          "adverse_3d": 0.0,
+          "hit_3d": true,
+          "days_to_target": 2,
+          "observed_days": 3
+        }
       },
       {
         "seg": [
@@ -151,15 +291,33 @@
         "distance": 3.0236187797648117,
         "start": "2026-10-23 11:30:00",
         "end": "2026-10-27 09:45:00",
-        "bars_15m": 26,
+        "confirm": "2026-10-27 15:00:00",
+        "bars_parent": 26,
         "rate": 0.07428571428571429,
         "amplitude": 0.11215629522431252,
         "rel_volume": 1.164594219194391,
         "context": 1.1241689551329528,
         "age_days": 23.020833333333332,
-        "age_penalty": 1.5894607546805841
+        "age_penalty": 1.5894607546805841,
+        "space": {
+          "confirm_time": "2026-10-27 15:00:00",
+          "entry_time": "2026-10-28 09:35:00",
+          "entry_price": 14.49,
+          "favorable_1d": 0.013802622498274575,
+          "adverse_1d": 0.03131672597864754,
+          "hit_1d": false,
+          "favorable_2d": 0.013802622498274575,
+          "adverse_2d": 0.04848046309696086,
+          "hit_2d": false,
+          "favorable_3d": 0.013802622498274575,
+          "adverse_3d": 0.08783783783783794,
+          "hit_3d": false,
+          "days_to_target": null,
+          "observed_days": 3
+        }
       }
-    ]
+    ],
+    "parent_period": "15"
   },
   "seg": [
     1010,
