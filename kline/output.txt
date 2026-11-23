@@ -6,13 +6,13 @@ han@m1:/opt/quote/src$
 han@m1:/opt/quote/src$
 han@m1:/opt/quote/src$ rm -f /opt/quote/{param,score}/*
 han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$
 han@m1:/opt/quote/src$ python3 -m mod_service
 [Web] http://127.0.0.1:8080
 [Pad] TCP 0.0.0.0:8765
 [数据] Sina快照=/var/tmp/log/_sina_dash_list
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/health HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
@@ -28,96 +28,19 @@ han@m1:/opt/quote/src$ python3 -m mod_service
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[WAVE] 301288-15: parent=01 SwingPoint=64, 当前Wave=2026-11-18 00:00:00 -> 2026-11-20 00:00:00, 映射15区间=(560, 592), 历史候选=0
+[WAVE-SPACE] 301288-15: {'samples': 0}
+[INFO] 当前01 Wave映射到15区间 (560, 592, 63), 找到相似Wave 0 个
+[FIT-DIAG] seg=(560, 592, 63): corr=0.890 超过上限 0.850
+[INFO] 默认参数 score=inf slope=0.72 corr=0.89
+[WARN] 无相似段, 退回默认值
 [HTTP] "GET /api/health HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[WAVE] 301288-15: parent=30 SwingPoint=12, 当前Wave=2026-11-19 10:30:00 -> 2026-11-20 15:00:00, 映射15区间=(579, 608), 历史候选=4
-  [WAVE-CAND] 2026-11-09 11:30:00 -> 2026-11-13 11:00:00: distance=1.965 bars_parent=32 amp=0.195 rate=0.178 rel_vol=1.20 context=0.855 space=[f
-avorable_1d=1.5% favorable_2d=8.1% favorable_3d=26.5%]
-  [WAVE-CAND] 2026-10-30 10:00:00 -> 2026-11-05 10:30:00: distance=2.314 bars_parent=34 amp=0.167 rate=0.100 rel_vol=1.19 context=0.768 space=[f
-avorable_1d=2.1% favorable_2d=6.6% favorable_3d=10.0%]
-  [WAVE-CAND] 2026-10-23 11:30:00 -> 2026-10-27 10:00:00: distance=2.627 bars_parent=14 amp=0.112 rate=0.064 rel_vol=1.07 context=0.761 space=[f
-avorable_1d=1.4% favorable_2d=1.4% favorable_3d=1.4%]
-  [WAVE-CAND] 2026-11-16 10:00:00 -> 2026-11-18 10:00:00: distance=2.824 bars_parent=17 amp=0.556 rate=0.471 rel_vol=4.72 context=0.634 space=[f
-avorable_1d=5.5% favorable_2d=5.5%]
-[WAVE-SPACE] 301288-15: {'samples': 4, 'n_1d': 4, 'mean_favorable_1d': 0.02626556440189637, 'median_favorable_1d': 0.018130908781194055, 'mean_a
-dverse_1d': 0.03294120279774737, 'hit_rate_1d': 0.25, 'n_2d': 4, 'mean_favorable_2d': 0.05405369289748169, 'median_favorable_2d': 0.060690999168
-941606, 'mean_adverse_2d': 0.08745381564454802, 'hit_rate_2d': 0.75, 'n_3d': 3, 'mean_favorable_3d': 0.12638682841946766, 'median_favorable_3d':
- 0.10028248587570632, 'mean_adverse_3d': 0.04483921791614098, 'hit_rate_3d': 0.6666666666666666, 'mean_days_to_target': 1.6666666666666667}
-[INFO] 当前30 Wave映射到15区间 (579, 608, 11), 找到相似Wave 4 个
-[INFO] 默认参数 score=2.220 slope=2.22 corr=0.73
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[FIT] seg=(455, 517, 7): 逐维/组合搜索 18 次, 有效 18 次, 耗时 0.90s, 逐维轮数 2
-  seg=(455, 517, 7): best score=1.740 slope=0.26 corr=-0.04 params={'share_stall': 0.08, 'share_vol': 0.25, 'share_trend': 0.3, 'flip_cap': 1.0,
- 'consec_mult': 1.5}
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[FIT] seg=(353, 419, 5): 逐维/组合搜索 23 次, 有效 23 次, 耗时 0.91s, 逐维轮数 2
-  seg=(353, 419, 5): best score=0.290 slope=0.71 corr=0.21 params={'share_stall': 0.08, 'share_vol': 0.2, 'share_trend': 0.3, 'flip_cap': 2.0, '
-consec_mult': 1.8}
-[FIT-DIAG] seg=(279, 305, 3): corr=0.870 超过上限 0.850
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[WAVE] 002017-15: parent=30 SwingPoint=4, 当前Wave=2026-10-23 15:00:00 -> 2026-11-20 15:00:00, 映射15区间=(271, 592), 历史候选=2
-  [WAVE-CAND] 2026-10-13 14:00:00 -> 2026-10-23 11:00:00: distance=1.365 bars_parent=62 amp=0.129 rate=-0.103 rel_vol=0.79 context=0.126 space=[
-favorable_1d=0.0%]
-  [WAVE-CAND] 2026-10-09 11:00:00 -> 2026-10-13 14:00:00: distance=5.349 bars_parent=20 amp=0.064 rate=0.053 rel_vol=1.24 context=0.500 space=[f
-avorable_1d=0.1% favorable_2d=0.4% favorable_3d=0.4%]
-[WAVE-SPACE] 002017-15: {'samples': 2, 'n_1d': 2, 'mean_favorable_1d': 0.0003776435045317328, 'median_favorable_1d': 0.0003776435045317328, 'mea
-n_adverse_1d': 0.00823974355369339, 'hit_rate_1d': 0.0, 'n_2d': 1, 'mean_favorable_2d': 0.0037878787878788955, 'median_favorable_2d': 0.00378787
-87878788955, 'mean_adverse_2d': 0.033207547169811225, 'hit_rate_2d': 0.0, 'n_3d': 1, 'mean_favorable_3d': 0.0037878787878788955, 'median_favorab
-le_3d': 0.0037878787878788955, 'mean_adverse_3d': 0.033207547169811225, 'hit_rate_3d': 0.0, 'mean_days_to_target': None}
-[INFO] 当前30 Wave映射到15区间 (271, 592, 3), 找到相似Wave 2 个
-[INFO] 默认参数 score=1.360 slope=0.64 corr=0.29
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[FIT] seg=(279, 305, 3): 逐维/组合搜索 32 次, 有效 16 次, 耗时 1.38s, 逐维轮数 3
-  seg=(279, 305, 3): best score=1.480 slope=1.48 corr=0.84 params={'share_stall': 0.15, 'share_vol': 0.2, 'share_trend': 0.2, 'flip_cap': 0.8, '
-consec_mult': 1.2}
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[FIT] seg=(139, 261, 1): 逐维/组合搜索 25 次, 有效 25 次, 耗时 0.97s, 逐维轮数 3
-  seg=(139, 261, 1): best score=1.640 slope=0.36 corr=0.04 params={'share_stall': 0.15, 'share_vol': 0.3, 'share_trend': 0.3, 'flip_cap': 0.8, '
-consec_mult': 1.5}
-[FIT-DIAG] seg=(101, 139, 0): corr=0.890 超过上限 0.850
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[FIT-PAIR] seg=(101, 139, 0): 两两覆盖 16 组, 新增评分 15 次, 有效累计 0 次, 改善=False
-[FIT-DIAG] seg=(101, 139, 0): 逐维与两两组合搜索均无有效评分, 保留默认拟合候选
-[FIT] seg=(101, 139, 0): 逐维/组合搜索 28 次, 有效 0 次, 耗时 0.46s, 逐维轮数 1
-  seg=(101, 139, 0): best score=inf slope=1.92 corr=0.89 params={'share_stall': 0.1, 'share_vol': 0.25, 'share_trend': 0.25, 'flip_cap': 1.0, 'c
-onsec_mult': 1.5}
-[INFO] 拟合(1.640) 不如默认(1.360), 退回默认值
-[TIME] 002017-15: compute=0.23s segment=0.00s similarity=0.00s base=0.18s fit=1.43s write=0.00s total=1.87s
-[OK] 已写入 /opt/quote/param/002017-15.json 和 -meta.json
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[SCORE] 002017-15 更新最后一根 2026-11-20 15:00:00
-[HTTP] "POST /api/app/chart_control HTTP/1.1" 404 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/health HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[FIT] seg=(529, 561, 9): 逐维/组合搜索 18 次, 有效 18 次, 耗时 1.78s, 逐维轮数 2
-  seg=(529, 561, 9): best score=2.260 slope=-0.26 corr=-0.53 params={'share_stall': 0.08, 'share_vol': 0.25, 'share_trend': 0.3, 'flip_cap': 1.0
-, 'consec_mult': 1.5}
-[TIME] 301288-15: compute=0.06s segment=0.02s similarity=0.00s base=0.06s fit=4.98s write=0.00s total=5.11s
+[TIME] 301288-15: compute=0.06s segment=0.00s similarity=0.00s base=0.06s fit=0.00s write=0.00s total=0.12s
 [OK] 已写入 /opt/quote/param/301288-15.json 和 -meta.json
 [SCORE] 301288-15 更新最后一根 2026-11-20 15:00:00
 [HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
 [HTTP] "GET /api/recent_stocks HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
@@ -135,7 +58,20 @@ onsec_mult': 1.5}
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
@@ -150,6 +86,14 @@ onsec_mult': 1.5}
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [INFO] 301288-01: 1109 根, regime切出 16 段: [(0, 25, 0), (40, 79, 0), (102, 141, 0), (271, 297, 0), (364, 397, 0), (474, 514, 0), (517, 559, 0)
 , (599, 635, 0), (663, 715, 0), (716, 743, 0), (757, 781, 0), (835, 885, 0), (911, 934, 0), (966, 1022, 0), (1050, 1087, 0), (1108, 1109, 1)]
 [WARN] 当前段仅 1 根, 小于拟合最小长度 20, 退回默认值
@@ -161,6 +105,20 @@ onsec_mult': 1.5}
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
@@ -178,8 +136,28 @@ adverse_1d': 0.021016852709409894, 'hit_rate_1d': 0.25, 'n_2d': 4, 'mean_favorab
 236469, 'mean_adverse_2d': 0.03152202851477309, 'hit_rate_2d': 0.75, 'n_3d': 4, 'mean_favorable_3d': 0.16281643710407445, 'median_favorable_3d':
  0.1826789313800642, 'mean_adverse_3d': 0.04376084826733573, 'hit_rate_3d': 0.75, 'mean_days_to_target': 1.6666666666666667}
 [INFO] 当前15 Wave映射到05区间 (1688, 1776, 11), 找到相似Wave 4 个
-[HTTP] "GET /api/health HTTP/1.1" 200 -
 [INFO] 默认参数 score=0.110 slope=1.11 corr=0.60
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[FIT] seg=(1316, 1502, 7): 逐维/组合搜索 20 次, 有效 20 次, 耗时 3.72s, 逐维轮数 2
+  seg=(1316, 1502, 7): best score=1.780 slope=0.22 corr=0.09 params={'share_stall': 0.15, 'share_vol': 0.2, 'share_trend': 0.25, 'flip_cap': 1.5
+, 'consec_mult': 1.5}
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/stocks?period=1d HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
@@ -197,38 +175,16 @@ adverse_1d': 0.021016852709409894, 'hit_rate_1d': 0.25, 'n_2d': 4, 'mean_favorab
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[FIT] seg=(1316, 1502, 7): 逐维/组合搜索 20 次, 有效 20 次, 耗时 3.80s, 逐维轮数 2
-  seg=(1316, 1502, 7): best score=1.780 slope=0.22 corr=0.09 params={'share_stall': 0.15, 'share_vol': 0.2, 'share_trend': 0.25, 'flip_cap': 1.5
-, 'consec_mult': 1.5}
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/health HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[FIT] seg=(1538, 1586, 9): 逐维/组合搜索 25 次, 有效 25 次, 耗时 5.02s, 逐维轮数 3
+[FIT] seg=(1538, 1586, 9): 逐维/组合搜索 25 次, 有效 25 次, 耗时 5.07s, 逐维轮数 3
   seg=(1538, 1586, 9): best score=1.780 slope=0.22 corr=0.52 params={'share_stall': 0.15, 'share_vol': 0.3, 'share_trend': 0.3, 'flip_cap': 0.8,
  'consec_mult': 1.2}
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
@@ -245,19 +201,16 @@ adverse_1d': 0.021016852709409894, 'hit_rate_1d': 0.25, 'n_2d': 4, 'mean_favorab
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[FIT] seg=(791, 866, 3): 逐维/组合搜索 20 次, 有效 20 次, 耗时 1.86s, 逐维轮数 2
+[FIT] seg=(791, 866, 3): 逐维/组合搜索 20 次, 有效 20 次, 耗时 1.92s, 逐维轮数 2
   seg=(791, 866, 3): best score=0.070 slope=0.93 corr=0.60 params={'share_stall': 0.08, 'share_vol': 0.3, 'share_trend': 0.3, 'flip_cap': 0.8, '
 consec_mult': 1.5}
-[TIME] 301288-05: compute=0.24s segment=0.03s similarity=0.00s base=0.23s fit=12.94s write=0.00s total=13.44s
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[TIME] 301288-05: compute=0.24s segment=0.02s similarity=0.00s base=0.23s fit=12.96s write=0.00s total=13.45s
 [OK] 已写入 /opt/quote/param/301288-05.json 和 -meta.json
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [SCORE] 301288-05 更新最后一根 2026-11-20 15:00:00
 [HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
 [HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/health HTTP/1.1" 200 -
@@ -266,12 +219,6 @@ consec_mult': 1.5}
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
@@ -282,13 +229,55 @@ consec_mult': 1.5}
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=1d HTTP/1.1" 200 -
 [HTTP] "GET /api/health HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
@@ -300,19 +289,19 @@ consec_mult': 1.5}
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
-[HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
-[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/recent_stocks HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
 [HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
