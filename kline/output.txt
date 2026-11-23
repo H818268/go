@@ -149,4 +149,955 @@ han@m1:/opt/quote/src$ less output.txt
 han@m1:/opt/quote/src$
 han@m1:/opt/quote/src$
 han@m1:/opt/quote/src$ tmux capture-pane -p -S - > /var/tmp/git/oh/kline/output.txt
+han@m1:/opt/quote/src$ rm -f /opt/quote/src/output.txt
+han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$ rm -f /opt/quote/src/output.txt
+han@m1:/opt/quote/src$ python3 -m mod_service
+[Web] http://127.0.0.1:8080
+[Pad] TCP 0.0.0.0:8765
+[数据] Sina快照=/var/tmp/log/_sina_dash_list
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 002017 5m 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[INFO] 002017-05: 1776 根, 切出 30 段: [(0, 49, 0), (64, 96, 0), (114, 145, 0), (147, 197, 0), (198, 278, 0), (351, 409, 0), (442, 468, 0), (481, 527, 0), (528,
+ 552, 0), (575, 613, 0), (678, 715, 0), (739, 768, 0), (818, 856, 0), (858, 880, 0), (914, 938, 0), (978, 1000, 0), (1024, 1047, 0), (1100, 1129, 0), (1144, 117
+5, 0), (1214, 1276, 0), (1279, 1299, 0), (1348, 1388, 0), (1419, 1464, 0), (1491, 1517, 0), (1549, 1572, 0), (1585, 1627, 0), (1636, 1680, 0), (1680, 1702, 1),
+(1702, 1728, 0), (1765, 1776, 1)]
+[WARN] 当前段仅 11 根, 小于拟合最小长度 20, 退回默认值
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-05 更新最后一根 2026-11-20 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 002017 15m 当天数据更新失败: Remote end closed connection without response
+[INFO] 002017-15: 592 根, 切出 8 段: [(24, 48, 1), (48, 93, 0), (170, 225, 0), (309, 337, 0), (410, 490, 0), (498, 528, 1), (533, 565, 0), (584, 592, 1)]
+[WARN] 当前段仅 8 根, 小于拟合最小长度 20, 退回默认值
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-15 更新最后一根 2026-11-20 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad] connected ('127.0.0.1', 55678)
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 002017 30m 当天数据更新失败: Remote end closed connection without response
+[INFO] 002017-30: 296 根, 切出 5 段: [(24, 46, 0), (52, 84, 0), (88, 115, 0), (177, 252, 0), (292, 296, 1)]
+[WARN] 当前段仅 4 根, 小于拟合最小长度 20, 退回默认值
+[SCORE] 002017-30 更新最后一根 2026-11-20 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 002017 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[INFO] 002017-01: 2423 根, 切出 34 段: [(48, 93, 0), (172, 193, 0), (195, 233, 0), (258, 295, 0), (327, 371, 0), (392, 460, 0), (563, 590, 0), (600, 655, 0), (7
+07, 771, 0), (790, 811, 0), (816, 877, 0), (881, 905, 0), (1009, 1033, 0), (1034, 1106, 0), (1107, 1144, 0), (1146, 1176, 0), (1182, 1202, 0), (1228, 1301, 0),
+(1342, 1378, 0), (1386, 1433, 0), (1442, 1481, 0), (1511, 1583, 0), (1642, 1691, 0), (1700, 1720, 0), (1827, 1899, 0), (1912, 1952, 0), (1953, 1974, 0), (2001,
+2022, 0), (2153, 2173, 0), (2184, 2215, 0), (2235, 2258, 0), (2260, 2303, 0), (2402, 2422, 0), (2422, 2423, 1)]
+[WARN] 当前段仅 1 根, 小于拟合最小长度 20, 退回默认值
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-01 更新最后一根 2026-11-20 00:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=1d HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/recent_stocks HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 15m 当天数据更新失败: Remote end closed connection without response
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 301288-30 更新最后一根 2026-11-23 11:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 5m 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=1d HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[SCORE] 301288-01 更新最后一根 2026-11-23 00:00:00
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 301288-01 更新最后一根 2026-11-23 00:00:00
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[SCORE] 301288-01 更新最后一根 2026-11-23 00:00:00
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[SCORE] 301288-01 更新最后一根 2026-11-23 00:00:00
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[SCORE] 301288-01 更新最后一根 2026-11-23 00:00:00
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[SCORE] 301288-01 更新最后一根 2026-11-23 00:00:00
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[行情] 301288 1d 当天数据更新失败: Remote end closed connection without response
+[SCORE] 301288-01 更新最后一根 2026-11-23 00:00:00
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+^C
+[Service] stopping
+^CTraceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/quote/src/mod_service/__main__.py", line 4, in <module>
+    serve(parse_args())
+  File "/opt/quote/src/mod_service/service/server.py", line 497, in serve
+    tcp.shutdown()
+  File "/opt/homebrew/Cellar/python@3.11/3.11.4_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socketserver.py", line 253, in shutdown
+    self.__is_shut_down.wait()
+  File "/opt/homebrew/Cellar/python@3.11/3.11.4_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 622, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.4_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$ python3 -m mod_service
+[Web] http://127.0.0.1:8080
+[Pad] TCP 0.0.0.0:8765
+[数据] Sina快照=/var/tmp/log/_sina_dash_list
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[INFO] 002017-05: 1776 根, 切出 30 段: [(0, 49, 0), (64, 96, 0), (114, 145, 0), (147, 197, 0), (198, 278, 0), (351, 409, 0), (442, 468, 0), (481, 527, 0), (528,
+ 552, 0), (575, 613, 0), (678, 715, 0), (739, 768, 0), (818, 856, 0), (858, 880, 0), (914, 938, 0), (978, 1000, 0), (1024, 1047, 0), (1100, 1129, 0), (1144, 117
+5, 0), (1214, 1276, 0), (1279, 1299, 0), (1348, 1388, 0), (1419, 1464, 0), (1491, 1517, 0), (1549, 1572, 0), (1585, 1627, 0), (1636, 1680, 0), (1680, 1702, 1),
+(1702, 1728, 0), (1765, 1776, 1)]
+[WARN] 当前段仅 11 根, 小于拟合最小长度 20, 退回默认值
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-05 更新最后一根 2026-11-23 11:10:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 002017 15m 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[INFO] 002017-15: 592 根, 切出 8 段: [(24, 48, 1), (48, 93, 0), (170, 225, 0), (309, 337, 0), (410, 490, 0), (498, 528, 1), (533, 565, 0), (584, 592, 1)]
+[WARN] 当前段仅 8 根, 小于拟合最小长度 20, 退回默认值
+[SCORE] 002017-15 更新最后一根 2026-11-20 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 002017 30m 当天数据更新失败: Remote end closed connection without response
+[INFO] 002017-30: 296 根, 切出 5 段: [(24, 46, 0), (52, 84, 0), (88, 115, 0), (177, 252, 0), (292, 296, 1)]
+[WARN] 当前段仅 4 根, 小于拟合最小长度 20, 退回默认值
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-30 更新最后一根 2026-11-20 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[行情] 002017 1d 当天数据更新失败: Remote end closed connection without response
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[INFO] 002017-01: 2423 根, 切出 34 段: [(48, 93, 0), (172, 193, 0), (195, 233, 0), (258, 295, 0), (327, 371, 0), (392, 460, 0), (563, 590, 0), (600, 655, 0), (7
+07, 771, 0), (790, 811, 0), (816, 877, 0), (881, 905, 0), (1009, 1033, 0), (1034, 1106, 0), (1107, 1144, 0), (1146, 1176, 0), (1182, 1202, 0), (1228, 1301, 0),
+(1342, 1378, 0), (1386, 1433, 0), (1442, 1481, 0), (1511, 1583, 0), (1642, 1691, 0), (1700, 1720, 0), (1827, 1899, 0), (1912, 1952, 0), (1953, 1974, 0), (2001,
+2022, 0), (2153, 2173, 0), (2184, 2215, 0), (2235, 2258, 0), (2260, 2303, 0), (2402, 2422, 0), (2422, 2423, 1)]
+[WARN] 当前段仅 1 根, 小于拟合最小长度 20, 退回默认值
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-01 更新最后一根 2026-11-20 00:00:00
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=1d HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+^C
+[Service] stopping
+han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$ tmux capture-pane -p -S - > /var/tmp/git/oh/kline/output.txt
 
