@@ -1,0 +1,21 @@
+{
+  "code": "301288",
+  "period": 5,
+  "n_bars": 1776,
+  "n_segs": 29,
+  "cur_seg": [
+    1745,
+    1776,
+    0
+  ],
+  "cands": [
+    [
+      1717,
+      1739,
+      0
+    ]
+  ],
+  "fallback": "fit_worse_than_default",
+  "fit_score": Infinity,
+  "base_score": 2.1100000000000003
+}
