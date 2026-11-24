@@ -1,7 +1,7 @@
 {
   "code": "301288",
   "period": 15,
-  "n_bars": 608,
+  "n_bars": 624,
   "segment_source": "01_swing_wave",
   "parent_period": "01",
   "fallback_reason": null,
@@ -12,20 +12,20 @@
   "n_segs": 63,
   "cur_seg": [
     560,
-    592,
+    608,
     63
   ],
   "cands": [],
   "wave_detail": {
     "turns": 64,
     "current_start": "2026-11-18 00:00:00",
-    "current_end": "2026-11-20 00:00:00",
+    "current_end": "2026-11-23 00:00:00",
     "current": {
-      "bars": 3,
-      "rate": 0.017208413001912115,
+      "bars": 4,
+      "rate": 0.055449330783938544,
       "amplitude": 0.32365826944140197,
-      "rel_volume": 6.886484356811547,
-      "mean_volume": 160222.66666666666
+      "rel_volume": 6.587116531456509,
+      "mean_volume": 153257.5
     },
     "space_summary": {
       "samples": 0
@@ -174,8 +174,8 @@
       4,
       102
     ],
-    "current_parent_bars": 3,
-    "current_child_bars": 32,
+    "current_parent_bars": 4,
+    "current_child_bars": 48,
     "grace_used": false,
     "effective_min_fit_bars": 16,
     "parent_period": "01"

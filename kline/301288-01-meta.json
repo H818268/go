@@ -1,7 +1,7 @@
 {
   "code": "301288",
   "period": 1,
-  "n_bars": 1109,
+  "n_bars": 1110,
   "segment_source": "regime",
   "parent_period": null,
   "fallback_reason": "current_regime_too_short",
@@ -298,16 +298,16 @@
       ],
       [
         1108,
-        1109,
+        1110,
         1
       ]
     ],
     "cur_seg": [
       1108,
-      1109,
+      1110,
       1
     ],
-    "current_bars": 1,
+    "current_bars": 2,
     "min_fit_bars": 5,
     "grace_fit_bars": null,
     "wave_detail": null
