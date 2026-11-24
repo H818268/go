@@ -368,9 +368,9 @@
   "corr": 0.64,
   "n_similar": 4,
   "params": {
-    "share_stall": 0.15,
-    "share_vol": 0.25,
-    "share_trend": 0.25,
+    "share_stall": 0.12,
+    "share_vol": 0.2,
+    "share_trend": 0.2,
     "flip_cap": 1.0,
     "consec_mult": 1.5
   }
