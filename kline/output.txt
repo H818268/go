@@ -6,88 +6,438 @@ han@m1:/opt/quote/src$
 han@m1:/opt/quote/src$
 han@m1:/opt/quote/src$
 han@m1:/opt/quote/src$
-han@m1:/opt/quote/src$
-han@m1:/opt/quote/src$ python3 -m mod_service.tech.param_gen --score --code 301288 --period 15 --regen
 han@m1:/opt/quote/src$ rm -f /opt/quote/{param,score}/*
-han@m1:/opt/quote/src$ python3 -m mod_service.tech.param_gen --score --code 301288 --period 15 --regen
-[WAVE] 301288-15: parent=01 SwingPoint=64, 当前Wave=2026-11-18 00:00:00 -> 2026-11-23 00:00:00, 映射15区间=(560, 608), 历史候选=0
-[WAVE-SPACE] 301288-15: {'samples': 0}
-[INFO] 当前01 Wave映射到15区间 (560, 608, 63), 找到相似Wave 0 个
-[INFO] 默认参数 score=0.270 slope=0.77 corr=0.82
-[WARN] 无相似段, 退回默认值
-[TIME] 301288-15: compute=0.06s segment=0.00s similarity=0.00s base=0.06s fit=0.00s write=0.00s total=0.12s
-[OK] 已写入 /opt/quote/param/301288-15.json 和 -meta.json
-[SCORE] 301288-15 <- param JSON (624 根), csv=/opt/quote/score/301288-15.csv
 han@m1:/opt/quote/src$
-han@m1:/opt/quote/src$ ll /opt/quote/{param,score}/*
--rw-r--r--  1 han  wheel    2506 Nov 24 20:18:02 2026 /opt/quote/param/301288-15-meta.json
--rw-r--r--  1 han  wheel    2152 Nov 24 20:18:02 2026 /opt/quote/param/301288-15.json
--rw-r--r--  1 han  wheel  231833 Nov 24 20:18:02 2026 /opt/quote/score/301288-15.csv
-han@m1:/opt/quote/src$ python3 -m mod_service.tech.param_gen --score --code 301288 --period 5 --regen
-[WAVE] 301288-05: parent=15 SwingPoint=14, 当前Wave=2026-11-23 10:30:00 -> 2026-11-23 15:00:00, 映射05区间=(1787, 1824), 历史候选=4
-  [WAVE-CAND] 2026-11-19 10:15:00 -> 2026-11-20 10:45:00: distance=1.761 bars_parent=19 amp=0.180 rate=0.094 rel_vol=0.72 context=1.272 space=[f
-avorable_1d=0.8%]
-  [WAVE-CAND] 2026-10-23 11:30:00 -> 2026-10-27 09:45:00: distance=2.525 bars_parent=26 amp=0.112 rate=0.074 rel_vol=1.16 context=0.472 space=[f
-avorable_1d=1.4% favorable_2d=1.4% favorable_3d=1.4%]
-  [WAVE-CAND] 2026-11-16 09:45:00 -> 2026-11-17 09:45:00: distance=2.688 bars_parent=17 amp=0.290 rate=0.220 rel_vol=2.40 context=0.262 space=[f
-avorable_1d=6.0% favorable_2d=27.2% favorable_3d=27.2%]
-  [WAVE-CAND] 2026-11-09 11:15:00 -> 2026-11-13 10:45:00: distance=2.710 bars_parent=63 amp=0.195 rate=0.190 rel_vol=1.60 context=0.170 space=[f
-avorable_1d=1.5% favorable_2d=8.1% favorable_3d=26.5%]
-[WAVE-SPACE] 301288-05: {'samples': 4, 'n_1d': 4, 'mean_favorable_1d': 0.024157484341798208, 'median_favorable_1d': 0.01443899969134832, 'mean_a
-dverse_1d': 0.030183100825934284, 'hit_rate_1d': 0.25, 'n_2d': 3, 'mean_favorable_2d': 0.1223126788033128, 'median_favorable_2d': 0.081030150753
-76896, 'mean_adverse_2d': 0.04202937135303079, 'hit_rate_2d': 0.6666666666666666, 'n_3d': 3, 'mean_favorable_3d': 0.1836610875135305, 'median_fa
-vorable_3d': 0.26507537688442206, 'mean_adverse_3d': 0.05834779768978097, 'hit_rate_3d': 0.6666666666666666, 'mean_days_to_target': 1.5}
-[INFO] 当前15 Wave映射到05区间 (1787, 1824, 13), 找到相似Wave 4 个
-[INFO] 默认参数 score=2.320 slope=-0.32 corr=-0.64
-[FIT] seg=(1688, 1742, 11): 逐维/组合搜索 25 次, 有效 25 次, 耗时 5.57s, 逐维轮数 3
-  seg=(1688, 1742, 11): best score=0.000 slope=1.00 corr=0.64 params={'share_stall': 0.12, 'share_vol': 0.2, 'share_trend': 0.2, 'flip_cap': 1.0
-, 'consec_mult': 1.5}
-[FIT] seg=(791, 866, 3): 逐维/组合搜索 23 次, 有效 23 次, 耗时 2.09s, 逐维轮数 2
-  seg=(791, 866, 3): best score=0.130 slope=0.87 corr=0.57 params={'share_stall': 0.08, 'share_vol': 0.3, 'share_trend': 0.3, 'flip_cap': 0.8, '
-consec_mult': 1.8}
-[FIT] seg=(1538, 1586, 9): 逐维/组合搜索 32 次, 有效 32 次, 耗时 6.31s, 逐维轮数 3
-  seg=(1538, 1586, 9): best score=0.290 slope=0.71 corr=0.62 params={'share_stall': 0.15, 'share_vol': 0.3, 'share_trend': 0.3, 'flip_cap': 1.5,
- 'consec_mult': 1.2}
-[FIT] seg=(1316, 1502, 7): 逐维/组合搜索 20 次, 有效 20 次, 耗时 3.70s, 逐维轮数 2
-  seg=(1316, 1502, 7): best score=1.900 slope=0.10 corr=0.14 params={'share_stall': 0.15, 'share_vol': 0.2, 'share_trend': 0.25, 'flip_cap': 1.5
-, 'consec_mult': 1.5}
-[TIME] 301288-05: compute=0.24s segment=0.02s similarity=0.00s base=0.24s fit=17.66s write=0.00s total=18.16s
-[OK] 已写入 /opt/quote/param/301288-05.json 和 -meta.json
-[SCORE] 301288-05 <- param JSON (1824 根), csv=/opt/quote/score/301288-05.csv
-han@m1:/opt/quote/src$ python3 -m mod_service.tech.param_gen --score --code 301288 --period 30 --regen
-[WAVE] 301288-30: parent=01 SwingPoint=64, 当前Wave=2026-11-18 00:00:00 -> 2026-11-23 00:00:00, 映射30区间=(272, 296), 历史候选=0
-[WAVE-SPACE] 301288-30: {'samples': 0}
-[INFO] 当前01 Wave映射到30区间 (272, 296, 63), 找到相似Wave 0 个
-[FIT-DIAG] seg=(272, 296, 63): corr=0.870 超过上限 0.850
-[INFO] 默认参数 score=inf slope=0.61 corr=0.87
-[WARN] 无相似段, 退回默认值
-[TIME] 301288-30: compute=0.03s segment=0.00s similarity=0.00s base=0.03s fit=0.00s write=0.00s total=0.06s
-[OK] 已写入 /opt/quote/param/301288-30.json 和 -meta.json
-[SCORE] 301288-30 <- param JSON (304 根), csv=/opt/quote/score/301288-30.csv
-han@m1:/opt/quote/src$ python3 -m mod_service.tech.param_gen --score --code 301288 --period 1 --regen
-[INFO] 301288-01: 1110 根, regime切出 58 段: [(0, 25, 0), (27, 33, 0), (40, 79, 0), (79, 84, 1), (85, 102, 1), (102, 141, 0), (144, 161, 0), (16
-1, 171, 1), (171, 184, 0), (197, 205, 0), (206, 215, 0), (216, 228, 0), (234, 241, 0), (246, 261, 0), (271, 297, 0), (297, 302, 1), (310, 326, 0
-), (326, 331, 1), (331, 345, 0), (351, 357, 0), (364, 397, 0), (399, 411, 1), (411, 427, 0), (432, 441, 1), (441, 455, 0), (457, 464, 0), (465,
-470, 0), (474, 514, 0), (517, 559, 0), (559, 566, 1), (566, 579, 0), (586, 593, 0), (599, 635, 0), (636, 651, 0), (651, 663, 1), (663, 715, 0),
-(716, 743, 0), (745, 750, 1), (750, 755, 0), (757, 781, 0), (790, 797, 0), (798, 804, 0), (804, 813, 1), (813, 829, 0), (829, 835, 1), (835, 885
-, 0), (891, 898, 0), (898, 911, 1), (911, 934, 0), (936, 944, 0), (953, 965, 0), (966, 1022, 0), (1022, 1028, 1), (1032, 1041, 0), (1050, 1087,
-0), (1090, 1096, 1), (1096, 1105, 0), (1108, 1110, 1)]
-[WARN] 当前段仅 2 根, 小于拟合最小长度 5, 退回默认值
-[META] /opt/quote/param/301288-01-meta.json: fallback=current_regime_too_short
-[SCORE] 301288-01 <- param JSON (1110 根), csv=/opt/quote/score/301288-01.csv
-han@m1:/opt/quote/src$ ll /opt/quote/{param,score}/*
--rw-r--r--  1 han  wheel    3503 Nov 24 20:19:03 2026 /opt/quote/param/301288-01-meta.json
--rw-r--r--  1 han  wheel    2152 Nov 24 20:19:03 2026 /opt/quote/param/301288-01.json
--rw-r--r--  1 han  wheel   10419 Nov 24 20:18:45 2026 /opt/quote/param/301288-05-meta.json
--rw-r--r--  1 han  wheel    2151 Nov 24 20:18:45 2026 /opt/quote/param/301288-05.json
--rw-r--r--  1 han  wheel    2506 Nov 24 20:18:02 2026 /opt/quote/param/301288-15-meta.json
--rw-r--r--  1 han  wheel    2152 Nov 24 20:18:02 2026 /opt/quote/param/301288-15.json
--rw-r--r--  1 han  wheel    2510 Nov 24 20:18:53 2026 /opt/quote/param/301288-30-meta.json
--rw-r--r--  1 han  wheel    2152 Nov 24 20:18:53 2026 /opt/quote/param/301288-30.json
--rw-r--r--  1 han  wheel  414763 Nov 24 20:19:03 2026 /opt/quote/score/301288-01.csv
--rw-r--r--  1 han  wheel  715897 Nov 24 20:18:45 2026 /opt/quote/score/301288-05.csv
--rw-r--r--  1 han  wheel  231833 Nov 24 20:18:02 2026 /opt/quote/score/301288-15.csv
--rw-r--r--  1 han  wheel  107190 Nov 24 20:18:53 2026 /opt/quote/score/301288-30.csv
-han@m1:/opt/quote/src$
+han@m1:/opt/quote/src$ python3 -m mod_service
+[Web] http://127.0.0.1:8080
+[Pad] TCP 0.0.0.0:8765
+[数据] Sina快照=/var/tmp/log/_sina_dash_list
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-30 更新最后一根 2026-11-25 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=002017&period=30 HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-15 更新最后一根 2026-11-25 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=002017&period=15 HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-05 更新最后一根 2026-11-25 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=002017&period=05 HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 002017-01 更新最后一根 2026-11-25 00:00:00
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=002017&period=01 HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=1d HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad] connected ('127.0.0.1', 64899)
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 301288-01 更新最后一根 2026-11-25 00:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=301288&period=01 HTTP/1.1" 200 -
+[HTTP] "GET /api/recent_stocks HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 301288-30 更新最后一根 2026-11-25 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=301288&period=30 HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 301288-15 更新最后一根 2026-11-25 15:00:00
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=301288&period=15 HTTP/1.1" 200 -
+[SCORE] 301288-15 更新最后一根 2026-11-25 15:00:00
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=301288&period=15 HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[SCORE] 301288-05 更新最后一根 2026-11-25 15:00:00
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=301288&period=05 HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=5m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=301288&period=30 HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=30m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=301288&period=01 HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=1d HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/switch_stock HTTP/1.1" 200 -
+[HTTP] "GET /api/params/stock?code=301288&period=15 HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/stocks?period=15m HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad选中] 1794447900000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad选中] 1794361500000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad选中] 1794362400000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794363300000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794364200000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad选中] 1794365100000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794365100000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794366000000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794366900000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794367800000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794374100000
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794375000000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794375000000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794375900000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794376800000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794377700000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794377700000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794378600000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794379500000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad选中] 1794378600000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794380400000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad选中] 1794379500000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794447900000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794448800000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794449700000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794450600000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794450600000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794449700000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794448800000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794449700000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad选中] 1794450600000
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794450600000
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794451500000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794452400000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794453300000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794454200000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[Pad选中] 1794460500000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "POST /api/app/chart_control HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[Pad选中] 1794461400000
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/health HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+[HTTP] "GET /api/app/chart_state HTTP/1.1" 200 -
+^C
+[Service] stopping
+han@m1:/opt/quote/src$ less mod_service/data/
+boards.json          param_versions.json  recent_stocks.json
+han@m1:/opt/quote/src$ less mod_service/data/param_versions.json
+han@m1:/opt/quote/src$ ll mod_service/data/param_versions.json
+-rw-r--r--  1 han  wheel  82515 Nov 26 08:00:37 2026 mod_service/data/param_versions.json
 han@m1:/opt/quote/src$ tmux capture-pane -p -S - > /var/tmp/git/oh/kline/output.txt
 
